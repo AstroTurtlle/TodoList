@@ -1,25 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import List from './Components/List';
+import Checkbox from './Components/Checkbox/Checkbox';
+import { Helmet } from 'react-helmet';
 
 function App() {
+  const TITLE = 'Todo App';
   return (
     <div className="App">
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        ciau
+        <button>Click me</button>
       </header>
+      <Checkbox label="I accept the terms and conditions" />
+      <Checkbox label="I want to receive the newsletter" />
     </div>
   );
 }
 
 export default App;
+
+//TODO: 1. Create a new component called "Checkbox" to customize the checkbox
+//TODO: 2. Create a new component called "Item"

@@ -1,0 +1,12 @@
+
+.Items_List {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item {
+    display: flex;
+    flex-direction: row;
+    
+}
