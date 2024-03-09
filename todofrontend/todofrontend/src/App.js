@@ -1,6 +1,5 @@
 import './App.css';
 import List from './Components/List';
-import Checkbox from './Components/Checkbox/Checkbox';
 import { Helmet } from 'react-helmet';
 
 function App() {
@@ -14,8 +13,7 @@ function App() {
         ciau
         <button>Click me</button>
       </header>
-      <Checkbox label="I accept the terms and conditions" />
-      <Checkbox label="I want to receive the newsletter" />
+      <List />
     </div>
   );
 }

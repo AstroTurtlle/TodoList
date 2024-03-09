@@ -1,7 +1,7 @@
 export const items = [
     {
         id: 1,
-        description: "Item 1",
+        description: "Bațeeeeeeeee",
         completed: false
     },
     {
