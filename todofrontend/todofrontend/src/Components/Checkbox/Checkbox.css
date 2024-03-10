@@ -60,52 +60,37 @@
   .circle {
     position: absolute;
     opacity: 0;
-    top: 50%;
-    left: 50%;
+    z-index: -1;
+    top: 45%;
+    left: 45%;
     border-radius: 50%;
-    width: 0.01em;
-    height: 0.01em;
-    border: 0.01em solid #007a7e;
+    width: 0;
+    height: 0;
+    border: 0.12em solid #007a7e;
     background-color:#007a7e;
   }
 
   .checkbox-wrapper input[type="checkbox"]::before {
     content: "\2713";
     opacity: 0;
-    color: #007a7e;
     font-size: 0.9em;
+    color: #007a7e;
     position: relative;
     right: -5.5px;
     top: 10%;
-    transition: opacity 0.15s;
+    transition: all 0.3s;
   }
 
   .checkbox-wrapper input[type="checkbox"]:hover::before {
     opacity: 1;
   }
 
-  .checkbox-wrapper input[type="checkbox"]:checked ~ .circle {
-    transform: translate(-50%, -50%) scale(10);
-    opacity: 1;
-    transition: all 0.3s;
-  }
-
   .checkbox-wrapper input[type="checkbox"]:checked::before {
     content: "\2713";
+    opacity: 1;
     font-size: 0.9em;
     color: #fff;
     position: relative;
+    right: -5.5px;
     top: 10%;
-  }
-
-  .checkbox-wrapper input[type="checkbox"]:checked::after {
-    content: "";
-    display: block;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    background-color: #fff;
-    position: relative;
-    top: -1.1em;
-    left: 0.3em;
   }
