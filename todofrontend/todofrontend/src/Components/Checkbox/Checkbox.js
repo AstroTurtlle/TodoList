@@ -12,14 +12,15 @@ const Checkbox = ({ label }) => {
     const recursive = <RxLoop />;
     
     const handleAnimation = async () => {
-        await animate(circleRef.current, {scale: 10, opacity: 1}, {type: "tween", duration: 0.35});
+        await animate(circleRef.current, {scale: 12, opacity: 1}, {duration: 0.35});
         animate(scope.current.parentNode, {y: -10}, {type: "tween", duration: 1});
         animate(scope.current.parentNode, {opacity: 0, duration: 1});
     }
 
     useEffect(() => {
-        if (Checked)
+        if (Checked) {
             handleAnimation();
+        }
     // eslint-disable-next-line
     }, [Checked])
 

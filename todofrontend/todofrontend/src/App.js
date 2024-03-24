@@ -19,6 +19,3 @@ function App() {
 }
 
 export default App;
-
-//TODO: 1. Create a new component called "Checkbox" to customize the checkbox
-//TODO: 2. Create a new component called "Item"

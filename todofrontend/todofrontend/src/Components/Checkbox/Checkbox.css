@@ -60,13 +60,12 @@
   .circle {
     position: absolute;
     opacity: 0;
-    z-index: -1;
     top: 45%;
     left: 45%;
     border-radius: 50%;
     width: 0;
     height: 0;
-    border: 0.12em solid #007a7e;
+    border: 0.1em solid #007a7e;
     background-color:#007a7e;
   }
 
@@ -87,6 +86,7 @@
 
   .checkbox-wrapper input[type="checkbox"]:checked::before {
     content: "\2713";
+    z-index: 1;
     opacity: 1;
     font-size: 0.9em;
     color: #fff;
